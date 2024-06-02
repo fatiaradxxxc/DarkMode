@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>DARKMODE</title>
+</head>
+<body>
+    <div>
+        <button id="theme-btn">Dark Mode</button>
+                <h1>Trabalho Função Dark Mode</h1>
+        </div>
+        <script>
+            const themeBtn = document.getElementById("theme-btn");
+            themeBtn.onclick = () => {
+              themeBtn.classList.toggle("fa-sun");
+              if (themeBtn.classList.contains("fa-sun")) {
+                document.body.classList.add("changeTheme");
+              } else {
+                document.body.classList.remove("changeTheme");
+              }
+            }
+          </script>
+    </body>
+</html>

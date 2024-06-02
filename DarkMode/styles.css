@@ -1,0 +1,15 @@
+body {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
+  
+  body.changeTheme {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  
+  body {
+    color: var(--text-color);
+    background: var(--bkg-color);
+  }
+
